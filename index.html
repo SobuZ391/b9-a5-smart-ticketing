@@ -1,11 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>P-Ticket</title>
+        <!--tailwind and daisyui  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- css style-->
+    <link rel="stylesheet" href="styles/style.css">
+
 </head>
-<body>
+<body class=".font-raleway">
+    <header class="w-[74rem] mx-auto" >
+        <!-- navbar section -->
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Home</a></li>
+                  <li><a>About</a></li>
+                  <li><a>Destination</a></li>
+                  <li><a>Search</a></li>
+                 </ul>
+              </div>
+              <a class="btn btn-ghost text-4xl font-extrabold">P-Ticket</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-lg">
+                <li><a>Home</a></li>
+                  <li><a>About</a></li>
+                  <li><a>Destination</a></li>
+                  <li><a>Search</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn text-green-600 text-xl bg-green-100 outline-2 outline-green-400 outline-dashed hover:bg-white">Bus <img src="images/bus-icon.png" alt="bus-icon"></a>
+            </div>
+          </div>
+
+    </header>
+    <main>
+        <!-- banner section  -->
+        <section class="w-[74rem] mx-auto">
+            <div class="hero h-[35rem] rounded-3xl" style="background-image: url(images/banner.png);">
+                <div class="bg-gradient-to-b from-[#03071280] to-[#03071200] "></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div >
+                    <h1 class="mb-5 text-6xl font-extrabold text-white">End-to-End Travel with <br><span class="text-[#1DD100]">P Paribahan</span></h1>
+                    <p class="mb-5">Yes, you can run unit tests and view the results directly within the app. The <br>integrated testing features allow for a streamlined .</p>
+                    <button class="btn btn-accent bg-[#1DD100] text- font-bold">Buy Tickets</button>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <!-- banner section end -->
+        <section class="w-[74rem] mx-auto ">
+            <h3 class="text-center font-bold text-4xl text-[#030712] pt-24 ">Best offers for you</h3>
+            <div class="flex justify-evenly" >
+                <!-- 15% coupon -->
+              <div>
+                <div class="card card-side bg-base-100 shadow-xl m-16 bg-[#FFBF0F] w-[33rem] bg-contain"  style="background-image: url(images/devider.png); background-repeat: no-repeat; background-position:center; ">
+                    <div class="card-body ">
+                        <h2 class="card-title text-4xl font-extrabold ">15% OFF</h2>
+                        <p class="font-semibold text-xl "> on your next purchase</p>  
+                        <p class="text-[#03071280]">use by January 2024</p>  
+                    </div>
+                    
+                    <div class="card-body "> 
+                      <h2 class="card-title pt-4 font-bold text-3xl">NEW15</h2>
+                      <p class="text-sm font-normal text-gray-500 pl-1">Coupon Code</p> 
+                </div>
+                </div>
+            </div>
+            <!-- 20% coupon -->
+              <div>
+                <div class="card card-side bg-base-100 shadow-xl m-16 bg-[#F78C9C] w-[33rem] bg-contain"  style="background-image: url(images/devider.png); background-repeat: no-repeat; background-position:center; ">
+                    <div class="card-body ">
+                        <h2 class="card-title text-4xl font-extrabold ">20% OFF</h2>
+                        <p class="font-semibold text-xl"> on your next purchase</p>  
+                        <p class="text-[#03071280 ] ">use by January 2024</p>  
+                    </div>
+                    
+                    <div class="card-body "> 
+                      <h2 class="card-title pt-4 font-bold text-3xl ">Couple 20</h2>
+                      <p class="text-sm font-normal text-gray-600 pl-4">Coupon Code</p> 
+                </div>
+                </div>
+            </div>
+            
+            </div>
+           <div class="flex justify-center ">
+            <button class="btn btn-wide bg-white text-green-500 font-bold  outline-2 outline-green-500 outline-dashed ">See All Offers</button>
+           </div>
+        </section>
+        <!-- paribahan and seat section  -->
+        <section class="border-t-4 border-green-500 mt-20 rounded-3xl bg-[#F7F8F8]" >
+            
+                <div class="w-[1240px] mx-auto ">
+                    
+                        <div class=" text-center m-12 pt-5">
+                        <h3 class="font-bold text-4xl text-[#030712] pb-8">P.H Paribahan</h3>
+                    <p class="text-lg text-[#03071299]">Yes, you can run unit tests and view the results directly within the app. The integrated <br> testing features allow for a streamlined .</p>
+                    </div>
+                    <div class="flex justify-between bg-[#FFFFFF] px-2 rounded-3xl ">
+                       <div >
+                        <div class="flex justify-between w-[50rem] p-6">
+                            <div class="flex gap-4 items-center">
+                                <div >
+                                    <img src="images/bus-logo.png" alt="">
+                                </div>
+                                <div>
+                                    <h3 class="text-3xl font-bold">Greenline Paribahan</h3>
+                                    <p class="text-lg text-[#03071299]">Coach-009-WEB ! AC_Business</p>
+                                </div>
+                             </div>
+                             <button class="btn w-52 bg-green-100 text-lg font-medium text-green-600"><img class="border-2 border-dashed border-gray-400" src="images/seat-green.png" alt=""><span> 40</span>Seats left</button>
+                           </div>
+                           <div class="bg-slate-100 rounded-3xl w-[50rem] p-4 h-72">
+                            <div class="flex justify-between  p-7">
+                                <h3>Route</h3>
+                                <h3>Dhaka-Sylhet</h3>
+                            </div>
+                            <div  class="flex justify-between p-7 border-y-2 border-dashed">
+                                <h3>Departure Time</h3>
+                                <h3>9:00 PM</h3>
+                            </div>
+                            <div class="flex justify-evenly p-6">
+                                <button class="btn w-56 bg-gray-300">Boarding Point - Laxmipur</button>
+                                <button class="btn w-56 bg-gray-300">Dropping Point - Bogura</button>
+                                <button class="btn w-56 bg-gray-300">Est. Time - 11 Hour</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-between  ">
+                        <div ><img src="images/Ellipse 1.png" alt=""></div>
+                        <div class="h-72 flex items-center justify-center">
+                            <div class="border-l-2 border-dashed border-green-400 h-full"></div>
+                          </div>
+                       <div class="rotate-180  "><img src="images/Ellipse 1.png" alt=""></div>
+                    </div>
+                    <div class="flex flex-col justify-center items-center text-center w-56" >
+                        <img class="border-2 border-dashed border-gray-500 " src="images/fare.png" alt="">
+                        <h3  class="text-3xl font-bold py-3 border-b-2 border-dashed border-" >550 Taka</h3>
+                        <p class="font-semibold text-2xl">Per Seat</p>
+                    </div>
+                </div>
+            </div>
+            <!-- seat section start  -->
+           
+               
+                
+            </div>
+        </section>
+
+      
+
+    </main>
+
     
 </body>
 </html>
