@@ -102,10 +102,7 @@ function discount() {
                     grandTotal.innerText = TotalMoney.toString();
 
                 }
-                  // couponBtn.addEventListener('click', function() {
-    //     const couponSection = document.getElementById('coupon-section');
-    //     couponSection.style.display = "none";
-    // });
+                  
     if (couponCode === "NEW15" || couponCode === "COUPLE20") {
         couponSection.style.display = "none";
     }
