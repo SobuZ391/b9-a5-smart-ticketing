@@ -74,7 +74,7 @@ function discount() {
     
     couponBtn.addEventListener('click', function() {
                 const couponCode = document.getElementById('coupon').value;
-                // const couponCode = couponInput.split(" ").join('').toUpperCase();
+                
                 
         
                 console.log(couponCode);
