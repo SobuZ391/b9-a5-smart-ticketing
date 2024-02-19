@@ -103,7 +103,7 @@ function discount() {
 
                 }
                   
-    if (couponCode === "NEW15" || couponCode === "COUPLE20") {
+    if (couponCode === "NEW15" || couponCode === "Couple 20") {
         couponSection.style.display = "none";
     }
             });
