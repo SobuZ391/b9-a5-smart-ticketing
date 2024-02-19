@@ -237,17 +237,17 @@
                                 
                                 
                                 <hr>
-                                <div class="flex justify-around font-semibold text-xl">
+                                <div class="flex justify-around font-semibold text-xl  bg-gray-200  h-10 rounded-xl">
                                     <div><h3>Total Price:</h3></div>
                                     <div ><h3>BDT <span id="totalPrice">0</span></h3></div>
                                 </div>
                                 <!-- coupon Input section  -->
-                                <div class="flex justify-center m-10">
+                                <div id="coupon-section" class="flex justify-center m-10 bg-gray-100 w-w-[80%] h-12 rounded-xl">
                                     <input id="coupon" type="text" placeholder="Have any coupon?" class="input input-bordered w-full max-w-xs" />
-                                    <button id="coupon-btn"    class="btn btn-accent mx-1 bg-green-500" >Apply</button>
+                                    <button id="coupon-btn" disabled   class="btn btn-accent mx-1 bg-green-500" >Apply</button>
 
                                 </div>
-                                <div class="flex justify-around font-semibold text-xl">
+                                <div class="flex justify-around font-semibold text-xl bg-gray-200  h-10 rounded-xl">
                                     <div><h3  >Grand Total :</h3></div>
                                     <div><h3>BDT <span id="total-cost">0</span></h3></div>
                                 </div>
@@ -255,17 +255,18 @@
                                 <div class="m-14">
                                     <span class="label-text text-lg font-bold ">Passenger Name*</span>
                                     <label class="input input-bordered flex items-center gap-2">
-                                        <input type="text" class="grow" placeholder="Enter Your Name" />
+                                        <input type="text"  class="grow" placeholder="Enter Your Name" />
                                     </label>
                                     <span class="label-text text-lg font-bold  ">Phone Number*</span>
                                       <label class="input input-bordered flex items-center gap-2">
                                         
-                                        <input id="input-mobile" type="text" class="grow" placeholder="Enter Your phone number"/>
+                                        <input id="input-mobile" class="grow" type="text" placeholder="Enter Your phone number" required pattern="[0-9]+" title="Please enter numbers only">
+
                                       </label>
                                     <span class="label-text text-lg font-bold ">Email ID</span>
                                       <label class="input input-bordered flex items-center  gap-2">
                                         
-                                        <input id="input-email" type="text" class="grow" placeholder="Enter Your Email id"/>
+                                        <input id="input-email"  class="grow" type="text" placeholder="Enter Your Email id" required pattern="[0-9]+" title="Please enter Email ID" />
                                       </label>
                                 </div>
 
@@ -316,7 +317,7 @@
     </main>
 
     <script src="scripts/index.js"></script>
-    <script src="scripts/utilitys.js"></script>
+    <script src="scripts/use.js"></script>
     
 </body>
 </html>
