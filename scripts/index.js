@@ -73,8 +73,8 @@ function discount() {
     });
     
     couponBtn.addEventListener('click', function() {
-                const couponInput = document.getElementById('coupon').value;
-                const couponCode = couponInput.split(" ").join('').toUpperCase();
+                const couponCode = document.getElementById('coupon').value;
+                // const couponCode = couponInput.split(" ").join('').toUpperCase();
                 
         
                 console.log(couponCode);
@@ -86,7 +86,7 @@ function discount() {
         
                 } 
                 // Calculate the discount (20% discount)
-                else if (couponCode == "COUPLE20") {
+                else if (couponCode == "Couple 20") {
                     const discountPrice = TotalMoney * 0.80;
                     grandTotal.innerText = discountPrice.toString();
                 } 
